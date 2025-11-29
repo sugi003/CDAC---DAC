@@ -1,0 +1,874 @@
+wpt-nov2025
+
+HTML  - HyperText Markup Language
+
+URL:
+
+http://www.google.com
+
+https://www.amazon.in/
+
+file:///D:/CDAC-hbd25/first.html
+
+
+http://www.someserver.com/pages/mypage.html
+
+
+
+
+
+w3c = www Consotium group
+
+Editors : Notepads, Notepad++, sublime, atom, brackets, VSC, .......
+
+Tags:
+
+<html><head><body>
+<b>, <i>, <u>
+<br> - line break
+
+header tags - <h1>..<h6>
+
+
+attributes: optional, mandatory
+<tag attrib=value attrib=value attrib=value></tag>
+
+
+
+<tag attrib="value">
+
+<h1> This is header 1 </h1>
+
+Container tags: HTML4
+- <p> - paragraph
+- <div> - divison
+- <span>
+
+
+<ol> - Ordered list
+<ul> - UnOrdered list
+<li> List Item
+<table>, <tr>,<td>
+<hr> - horizontal ruler
+
+<a> - anchor
+
+
+HTML 4 Form elements: 9 + 3
+
+<input type=?>
+
+Text-based:
+- text
+- password
+- hidden  XXX
+
+button-based:
+- button
+- submit
+- reset
+
+Misc:
+- radio
+- checkbox
+- file
+
+
+3:
+Text area : <textarea>
+drop down:
+<button>
+
+
+file:///D:/CDAC-hbd25/form.html?uname=Ramcharan&passwd=secret
+
+https://www.amazon.in/s?k=mouse+for+laptop&crid=3BUT89YP52NE1&sprefix=mmouse%2Caps%2C277&ref=nb_sb_ss_p13n-pd-dpltr-ww-ranker-t1_1_6
+
+file:///D:/CDAC-hbd25/form.html
+
+
+
+GET / POST
+
+
+attributes :  name, type, value, readonly, maxlength, ....
+
+Forms (HTML5):
+16 new form attributes (8)
+13 new form elements (9+13/8)
+
+
+attributes:
+- required
+- autofocus
+- placeholder
+- min - only for number
+- max - only for number
+- pattern
+- minlength - only for textfield
+- title
+
+
+
+Elements: (13)
+<input type=?>
+- email
+- number
+- range
+- date ( 5)
+- color
+- url
+- search
+- tel
+
+
+
+
+Multimedia  - image, audio, video
+<img src>
+
+<audio>
+<video>
+
+
+
+
+
+
+MIME types:
+
+text/plain
+text/html
+
+image/gif
+image/jpg
+
+audio/wav
+audio/mp3
+
+
+
+
+HTTP Status Codes:
+1XX - informational
+2XX - success   200 ok
+3XX - redirectional
+4XX - client error 404 page not found
+5XX - server error
+
+
+Content/container tags:
+
+
+
+tag{
+   prop : value;
+   prop : value;
+}
+
+p{}
+
+How to embed CSS into HTML?
+- internal/embedded SS
+- Linked/external SS
+- inline SS
+
+
+Types of selector?
+- tag selector p{}, h1{}
+- ID selector  #ele{}
+- class selector .box{....}
+
+
+
+JavaScript:
+- Client side validation
+- event handling
+- DOM manipulation
+
+
+Part-1 : Language fundamentals
+Part-2 : DOM
+
+
+Language fundamentals:
+
+
+where can i put the <script> tag?
+- <body>
+- <head>
+- Ext file
+
+Strongly typed languages?
+int i = 10
+i = "aaa"
+float f;
+String str;
+
+
+JS is a loosely typed language
+var i;
+var j = 10
+
+
+<script>
+           var sname = prompt("Enter name")
+           var age = prompt("Enter age")
+
+           console.log(sname, age)
+        </script>
+
+
+
+
+//Function Expression
+            function greet(){  //named function
+                document.writeln("Hello User!!<br>")
+            }
+            greet()
+
+            var greet1 = function(){  //anonymous func
+                document.writeln("Hello Exprn<br>")
+            }
+            greet1()
+
+            function greetUser(uname){
+                document.writeln("Hello " + uname + "!!<br>")
+            }
+
+            var greetUser1 = function(username){
+                document.writeln("Hello " + username + "!!<br>")
+            } 
+            greetUser1("Sumit")
+
+
+            function add(a, b){
+                return a + b
+            }
+
+            var add1 = function(x, y){
+                return x + y
+            }
+            document.writeln("Sum is  " + add1(10,20))
+            
+
+
+
+Functions:
+- user defined functions
+- Built in functions - parseInt(), parseFloat(), isFinite(), isNaN()
+
+
+JS Objects:
+- Core/prebuilt Objects : string, date, Math, Array, Number, Boolean, RegExp.....
+- user defined Objects
+
+
+
+Rule :
+- Every JS obj exposes both props as well as methods
+- Each property is read/write
+
+
+
+obj.prop
+obj.method()
+
+String :
+props : length, prototype
+methods : 
+
+
+subString()
+subStr()
+slice()
+
+
+Date:
+
+
+getXXX()
+setXXX()
+
+
+Arrays:
+props: length, prototype
+methods : join(), concat(), push(), pop(), splice(), reverse(), .....
+
+
+
+
+User defined Objects:
+- Object Initizer/literal (JSON)
+- Function constructor
+- class (ES6)
+
+
+ES6 features: class, const, let, fat arrow
+
+
+Java ->
+
+JS =>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var str = "hello"
+var str = new String("Hello")
+
+var i = 10
+
+
+setInterval() : executes a func after evrtu time interval
+setTimeout() : execute a func after a specified time interval finishes
+
+
+function f1(){
+   console.log("In f1")
+}
+
+f1()
+
+
+
+Higher order functions:
+
+setInterval(f1, ms)
+
+
+<head>
+        <script>
+            function greet(){   //event handler
+                var name = document.getElementById("uname").value
+                console.log("hello", name)
+            }
+        </script>
+    </head>
+    <body>
+       <form>
+          Username : <input id="uname"><br>
+          <input type="button" value="greet user" onclick="greet()">
+       </form>
+    </body>
+
+----------------------------------
+ <script>
+            function add(){   //event handler
+                var no1 = parseInt(document.getElementById("no1").value)
+                var no2 = parseInt(document.getElementById("no2").value)
+                //console.log("Sum is", (no1 + no2))
+                document.getElementById("res").value = no1 + no2
+            }
+        </script>
+    </head>
+    <body>
+       <form>
+          No-1 : <input id="no1"><br>
+          No-2 : <input id="no2"><br>
+          <input type="button" value="Add" onclick="add()"><br>
+          Result : <input id="res" readonly>
+
+       </form>
+
+----------------------------------------
+<script>
+            function add(){   //event handler
+                var no1 = parseInt(document.getElementById("no1").value)
+                var no2 = parseInt(document.getElementById("no2").value)
+                //console.log("Sum is", (no1 + no2))
+                //document.getElementById("res").value = no1 + no2
+                var sum = no1 + no2
+                //document.write("Sum is " + sum)
+                document.getElementById("res").innerHTML = sum
+            }
+        </script>
+    </head>
+    <body>
+       <form>
+          No-1 : <input id="no1"><br>
+          No-2 : <input id="no2"><br>
+          <input type="button" value="Add" onclick="add()"><br>
+          Result : <span id="res"> </span>
+
+       </form>
+    </body>
+
+--------------------------------------------
+
+
+value property  : used ONLY for form elements
+innerHTML property : Used ONLY for tag elements
+
+
+<tag> </tag>
+
+
+getElementsByClassName("c1") -> select all 
+getElementsByTagName("p")  -> select all paras
+getElementsByName("r1")   
+getElemmentById("p1")
+
+
+
+
+
+
+Validation:
+- Form-level validationn
+- Field-level validationn
+
+
+
+
+<canvas></canvas>
+
+
+XML - store, structure, transport
+parse XML documents
+
+JSON - store, structure, transport
+
+parsing JSON
+
+var obj = { "name ":"amit", "age":23}; 
+obj.name
+obj.age
+
+
+
+
+
+
+
+
+
+
+
+
+
+Backend Technologies:
+- Servlet/JSP
+- Spring/Spring Boot
+- PHP
+- .NET
+- Python
+- Node/Express
+
+
+Front-end Tecnologies:
+- HTML
+- CSS
+- JS
+- jQuery
+- Ajax
+- Bootstrap/Tailwind
+- React
+- Angular
+- Vue
+
+
+Web Server:
+- Java : Tomcat, JBoss, Glassfish, WebLogic, WSAD,   
+- .NET : IIS
+- PHP : Apache HTTPD
+
+
+
+
+
+CSS Selectors: Only change the style of the document
+- tag : p{...}
+- id  : #p1{....}
+- class : .c1{....}
+
+
+jQuery selectors:  change the entire behaviour of the document
+- tag : $("p") 
+- id  : $("#p1")
+- class : $(".c1")
+
+
+document.getElementsByTagName("p")
+
+jQuery("p")
+
+$("p") - select all paras
+$("h1") - selects all <h1> tags
+$("a") - selects all <a> tags
+$("div") - selects all <div> tags
+
+$("#p1") - select that element whose id is p1
+
+$(".c1") - selects all elements that have class c1
+
+$("p, a") - select all paras and all anchors
+
+$("p, a, div") - select all paras and all anchors and all divs
+
+$("div p") - selects all paras inside div
+
+
+
+jquery methods : 
+
+css(), text(), html(), each(), 
+
+animation methods : hide(), show(), slideUp(), slideDown(), fadeIn(), fadeout(), fadeTo()
+
+length prop
+
+
+$("input[type='radio']")
+
+
+------- Looping ---------
+
+/*
+           $("p").each(function(){
+               console.log($(this).html())  //raw DOM <p> element
+           })
+
+           $("p").each(function(index){
+              console.log(index, $(this).html())
+           })*/
+
+           $("p").each(function(index, element){
+              console.log(index, $(element).html())
+           })
+
+-----------------------
+
+   Events:
+
+$(selector).event(function)
+
+$("#btn1").click(function(){})
+
+
+$("img").mouseover(function(){})
+
+---------  events and form ------------
+<script>
+        $(document).ready(function () {
+
+            $("#btn").click(function () {
+                var name = $("#un").val()
+                var pass = $("#pass").val()
+
+                $("#p1").html("Welcome " + name + "  your pass is " + pass)
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to HTML</h1>
+    <hr>
+    <form>
+        Username : <input type="text" id="un"><br>
+        Password : <input type="password" id="pass"><br>
+        <input type="button" value="MyButton" id="btn"> <br>
+        <p id="p1"></p>
+    </form>
+
+----------------------------
+
+Events:
+
+on() off()
+
+
+$(selector).event(function)
+
+$("#btn1").click(function(){})
+
+$(selector).on(event, function(){})
+
+
+
+$("p:eq(0)")   -- filter
+$("p:lt(5)")
+
+$("p").eq(0)    --- traversal method
+
+
+
+DOM manipulation :
+append(), after() , appendTo()
+
+$(selector).append(new element)
+$(selector).after(new element)
+
+newElement.appendTo(selector)
+
+prepend(), before(), prependTo()
+
+
+$("p").each()
+
+$.each(array)
+
+
+
+AJAX - Asynchronous JavaScript And XML
+
+- HTML
+- CSS
+- JavaScript
+- DOM
+- XML
+- XmlHttpRequest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REPL - Read Execute Print Loop
+
+library - math.h, string.h
+#include<string.h>
+
+java.util.*
+import java.util.*
+
+module1.py
+import .py
+
+abc.js
+<script src=?>
+
+
+module.js
+require("module.js")
+
+Modules:
+- Core (built-in) Module   (timer, http, fs)
+- Local (user-defined) modules
+- Third party modules
+
+
+80  - http
+21  - ftp
+
+
+http://www.someserver.com:80
+
+http://localhost:3000
+
+
+
+var f1 = ()=>{}
+
+var greet = () => console.log("Hello User")
+
+1) if no arg, then () is compulsory
+2) if 1 arg, then () is not compulsory
+3) if multiple args, then () is compulsory
+4) if func has only 1 line, then write as is
+5) if func has multiple lines, put into {}
+
+
+
+How to use Third party modules?
+- 1) download the TPM from npmjs.com
+- 2) install it
+- 3) require(TPM)
+
+
+NPM - Node Package Manager - installing, uninstalling, updating TPM
+
+Install : npm install tpm
+
+Globally/locally
+
+global : npm install -g tpm
+local : npm install tpm
+
+
+npm install -g angular@cli
+
+npm install -g typescript
+
+
+Web Application :
+- static pages
+- dynamic pages 
+
+
+
+
+
+let fs = require("fs")
+
+fs.method()
+
+fs.write()        -> async method
+fs.writeSync()    -> sync method
+
+
+fs.readile()
+fs.readileSync()
+
+
+fs.unlink()
+fs.unlinkSync()
+
+
+
+fs.readFile()
+
+--------------------------------
+- fs.open()
+- fs.read()
+- fs.close()
+
+
+
+
+
+
+
+
+
+
+
+GET req:
+- <form>, <form method="get">
+- URL directly on url addr bar of browser
+
+POST req :
+<form method="post">
+
+
+
+Web application : application available over the web
+consumes? Human sitting on a browser
+Human centric
+return? HTML
+
+
+Web Service: Service available over the web
+Consumer? application
+application-centric
+return? data (json, xml)
+
+WS:
+- SOAP-based WS
+- RESTful WS
+
+
+1) URL:
+
+- static
+- dynamic
+
+http://www.someserver.com/app/pages/welcome.html
+http://www.someotherserver.com/pages/welcome.html
+http://www.someserver.com/app/images/sun.mp4
+http://www.someserver.com/app/pages/reg.pdf
+
+
+
+RESTLess URL : verbs
+http://www.techarticles.com/pages/getArticle?id=12345
+http://www.techarticles.com/pages/delArticle?id=12345
+http://www.techarticles.com/pages/updateArticle?id=12345
+http://www.techarticles.com/pages/getAllArticles
+
+
+
+
+2) RESTful URLs
+nouns/resource
+
+http://www.techarticles.com/pages/article?id=12345  GET
+http://www.techarticles.com/pages/article?id=12345  DELETE
+http://www.techarticles.com/pages/articles
+
+
+
+http://www.techarticles.com/pages/article?id=12345 
+http://www.techarticles.com/pages/article/12345
+
+
+
+3) HTTP methods: (W3CGroup)
+- GET  : READ
+- POST  : CREATE
+- PUT  :  UPDATE
+- DELETE : DELETE
+
+
+4) REST - REpresentational State Transfer
+
+
+CRUD
+
+PUT, DELETE, OPTIONS, HEAD, TRACE, COMMAND....
+
+
+app.get()
+app.post()
+app.put()
+app.delete()
+
+http://localhost:3000/fetchAddPage
+http://localhost:3000/processNos?no1=100&no2=200
+
+
+req.query : whenever incoming req is a GET req
+
+req.body : whenever incoming req is a POST req
+
+req.param : whenever incoming req contains path parameters
+
+
+http://localhost:3000/users/102
+http://localhost:3000/users
+http://localhost:3000/users?id=102
+
+
+
+
+
+
+
+
+
+
+
+
+
