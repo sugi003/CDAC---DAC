@@ -307,12 +307,6 @@ User defined Objects:
 ES6 features: class, const, let, fat arrow
 
 
-Java ->
-
-JS =>
-
-
-
 
 
 
@@ -859,6 +853,7 @@ req.param : whenever incoming req contains path parameters
 http://localhost:3000/users/102
 http://localhost:3000/users
 http://localhost:3000/users?id=102
+
 
 
 
